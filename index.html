@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Data Integrity</title>
+    <!-- <script src="https://cdn.ethers.io/lib/ethers-5.5.4.min.js"></script> <!-->
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+        
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Your existing CSS styles */
+        /* Add your additional styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="file"] {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3fa46a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #347f4e;
+        }
+
+        pre {
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Verify Data Integrity</h1>
+
+        <div>
+            <input type="file" id="fileInput" /><br/>
+            <button id="uploadAndExtract">Upload and Extract</button>
+            <pre id="contentDisplay"></pre>
+        </div>
+        
+        <h1>Verify Data Integrity</h1>
+       
+        <button id="deployButton">Update Hash</button> <br/><br/>  
+        <button id="verifyButton">Check Data Integrity</button>
+        
+        <hr>
+        <hr>
+
+        <div id="result"></div>
+    </div>
+
+    <script type="module" src="./index.js"> </script>
+</body>
+
+</html>
